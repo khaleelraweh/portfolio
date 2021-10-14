@@ -1,0 +1,125 @@
+/* Arabic  */
+body{
+    direction: rtl;
+}
+.aside{
+    right: 0;
+}
+.section{
+    left: 0;
+    right: 270px;
+    direction: rtl;
+}
+.aside .nav li a:not(.active):hover{
+     padding-right: 5px; 
+     margin-right: 0px; 
+     margin-left: 100px;
+    /* border-bottom: 2px solid #e8dfec; */
+}
+.section-title h2::before,
+.section-title h2::after{
+    right: 0;
+}
+.about .about-content .skill-item .progress .skill-precentage{
+    left: 0;
+    right: 100%;
+}
+.about .about-content .skill-item .progress .progress-in{
+    left: auto;
+}
+.about .about-content .timeline .timeline-item::before{
+    right: 0;
+}
+.about .about-content .timeline .circle-dot{
+    right: -7px;
+}
+.blog .blog-item .blog-item-inner .blog-image .blog-item-date{
+    right: 15px;
+    left: auto;
+}
+.aside .nav-toggler{
+    left: auto;
+}
+
+@media (max-width:1199px){
+    section .container{
+        padding-top: 70px;
+    }
+    
+    .aside .nav-toggler{
+        display: -ms-flex;
+        display: flex;
+        right: 30px;
+    }
+    .aside .nav-toggler.open{
+        left: auto;
+        right: 200px;
+    }
+    .aside{
+        right: -270px;
+        left: auto;
+    }
+    .aside.open{
+        right: 0px;
+        left: auto;
+    }
+    .section{
+        right: 0px;
+        left: 0;
+    }
+    .section.open{
+        right: 270px;
+        left: 0;
+    }
+    .main-content{
+        padding-right: 0;
+    }
+}
+
+@media (max-width:1100px){
+    .aside{
+        left: -270px;
+    }
+   
+    .main-content{
+        padding-left: 0;
+    }
+}
+
+@-webkit-keyframes slideSection{
+    0%{
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100%{
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);  
+    }
+}
+@keyframes slideSection{
+    0%{
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100%{
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);  
+    }
+}
+
+/* style switcher for arabic */
+.style-switcher{
+    left: 0;
+    right: auto;
+    border-right: inherit;
+    border-left: none;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.style-switcher .toggle-style-switcher{
+    right: -46px;
+    border: 1px solid #d4d4e3;
+    border-left: none;
+    text-align: center;
+    border-radius: 0px 5px 5px 0px;
+}
