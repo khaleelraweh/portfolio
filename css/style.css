@@ -1181,8 +1181,8 @@ body .aside{
 body.dark .section{
     background-color: #151515;
 }
-body .about .about-content .education .experience-inner,
-body .about .about-content .experience .experience-inner,
+body.dark .about .about-content .education .experience-inner,
+body.dark .about .about-content .experience .experience-inner,
 body.dark .style-switcher .toggle-style-switcher,
 body.dark .style-switcher,
 body.dark .contact .contact-form .form-item .form-group .form-control,
