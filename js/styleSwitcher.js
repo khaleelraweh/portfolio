@@ -6,6 +6,14 @@ window.addEventListener("load",function(){
         - setStyleColor
         - changeBodySkinColor
     */
+   
+        
+       
+       let langState = localStorage.getItem("lang");
+       console.log(langState);
+      
+        
+   
     loadTheme();
 });
 
@@ -58,7 +66,7 @@ const bodySkin = document.querySelectorAll(".body-skin"),
       //  Language Switcher 
       
       const langStyle = document.querySelector(".languages");
-
+      
       //to set the style that coaporate with the language activated
       function setLanguageStyle(langName){
 
@@ -72,7 +80,7 @@ const bodySkin = document.querySelectorAll(".body-skin"),
       
       // to check the language that has been choosen to load the appropriate layout interact with language
       function changeLanguageLayout(languageName){
-        if(languageName!="English"){
+        if(languageName=="Arabic"){
             langStyle.removeAttribute("disabled");
         }else{
             langStyle.setAttribute("disabled",true);
